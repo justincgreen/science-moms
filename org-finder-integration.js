@@ -6,6 +6,9 @@ const AZ = {
 	stateGroupTitle: 'Citizens\' Climate Lobby - At Large, Arizona',
 	stateGroupDescription: 'Citizens\' Climate Lobby empowers everyday people in Arizona to work within their communities and members of Congress on solutions to climate change.',
 	stateGroupLink: 'https://citizensclimatelobby.org/chapters/Arizona_-_At_Large/',
+	stateGroupTwoTitle: 'Northern Arizona Climate Change Alliance',
+	stateGroupTwoDescription: 'NAZCCA fights climate change through grassroots organizing within communities to educate, empower and connect people with information and the opportunities to engage in the work.',
+	stateGroupTwoLink: 'https://www.nazcca.org/',
 	ideology: {
 		liberalGroupTitle: 'The Climate Reality Project - Baja, AZ Chapter',
 		liberalGroupDescription: 'The Climate Reality Project is a diverse group of individuals who have come together to solve climate change and build a sustainable future.',
@@ -27,7 +30,7 @@ const AZ = {
 		hispanicGroupTitle: 'Chispa Arizona',
 		hispanicGroupDescription: 'Chispa Arizona is growing latinx voices, political power and civic engagement for a cleaner future in Arizona.',
 		hispanicGroupLink: 'https://chispalcv.org/state/arizona/',
-		africanAmericanGroupTitle: 'NAACP',
+		africanAmericanGroupTitle: 'NAACP Environmental Climate Justice',
 		africanAmericanGroupDescription: 'NAACP\'s Environmental and Justice program works to reduce harmful emissions, particularly greenhouse gases, advances energy efficiency and clean energy and strengthen\'s community resilience and livability.',
 		africanAmericanGroupLink: 'https://naacp.org/know-issues/environmental-climate-justice'
 	},
@@ -46,6 +49,9 @@ const GA = {
 	stateGroupTitle: 'Citizens\' Climate Lobby - Atlanta, GA Chapter',
 	stateGroupDescription: 'Citizens\' Climate Lobby empowers everyday people in Georgia to work within their communities and members of Congress on solutions to climate change.',
 	stateGroupLink: 'https://citizensclimatelobby.org/chapters/GA_Atlanta/',
+	stateGroupTwoTitle: 'Drawdown Georgia',
+	stateGroupTwoDescription: 'Drawdown Georgia aims to build a movement in Georgia to accelerate progress toward net zero greenhouse gas emissions.',
+	stateGroupTwoLink: 'https://www.drawdownga.org',
 	ideology: {
 		liberalGroupTitle: 'The Climate Reality Project - Atlanta, GA Chapter',
 		liberalGroupDescription: 'The Climate Reality Project is a diverse group of individuals who have come together in Georgia to solve climate change and build a sustainable future.',
@@ -89,6 +95,9 @@ const NC = {
 	stateGroupTitle: 'Citizens\' Climate Lobby - Charlotte, NC Chapter',
 	stateGroupDescription: 'Citizens\' Climate Lobby empowers everyday people in North Carolina to work within their communities and members of Congress on solutions to climate change.',
 	stateGroupLink: 'https://community.citizensclimate.org/groups/home/1410',
+	stateGroupTwoTitle: 'CleanAIRE North Carolina',
+	stateGroupTwoDescription: 'CleanAIRE North Carolina advocates for the health of all North Carolinians by pursuing equitable and collaborative solutions that address climate change and air pollution.',
+	stateGroupTwoLink: 'https://cleanairenc.org',
 	ideology: {
 		liberalGroupTitle: 'The Climate Reality Project - Charlotte, NC Chapter',
 		liberalGroupDescription: 'The Climate Reality Project is a diverse group of individuals in North Carolina who have come together to solve climate change and build a sustainable future.',
@@ -110,9 +119,9 @@ const NC = {
 		noSchoolGroup: 'No school group'
 	},
 	ethnicity: {
-		hispanicGroupTitle: 'Green Latinos',
-		hispanicGroupDescription: 'Green Latinos is a coalition of Latino leaders committed to addressing national, regional and local environmental, natural resources and conservations issues that affect the health and welfare of the U.S. Latino community.',
-		hispanicGroupLink: 'https://www.greenlatinos.org/climate-and-clean-airhttps://www.greenlatinos.org/climate-and-clean-air',
+		hispanicGroupTitle: 'Ecomadres - Moms Clean Air Force',
+		hispanicGroupDescription: 'EcoMadres brings Latina moms together to address issues of clean air, climate and toxics that affect the health of Latino children and families.',
+		hispanicGroupLink: 'https://www.momscleanairforce.org/ecomadres/',
 		africanAmericanGroupTitle: 'North Carolina Environmental Justice Network',
 		africanAmericanGroupDescription: 'The North Carolina Enviromental Justice Network is a grassroots, people of color-led coalition of community organizations and their supporters working on issues of climate change, environmnental, racial and social injustice.',
 		africanAmericanGroupLink: 'https://ncejn.org/issues/'
@@ -132,6 +141,9 @@ const PA = {
 	stateGroupTitle: 'Citizens\' Climate Lobby - Philadelphia, PA Chapter',
 	stateGroupDescription: 'Citizens\' Climate Lobby empowers everyday people in Pennsylvania to work within their communities and members of Congress on solutions to climate change.',
 	stateGroupLink: 'https://community.citizensclimate.org/groups/home/1178',
+	stateGroupTwoTitle: 'Clean Air Council',
+	stateGroupTwoDescription: 'The Clean Air Council fights for everyone\'s right to breathe clean air by encouraging clean energy and climate change policy.',
+	stateGroupTwoLink: 'https://cleanair.org/',
 	ideology: {
 		liberalGroupTitle: 'The Climate Reality Project - Lehigh Valley, PA Chapter',
 		liberalGroupDescription: 'The Climate Reality Project is a diverse group of individuals in Pennsylvania who have come together to solve climate change and build a sustainable future.',
@@ -172,6 +184,9 @@ const WI = {
 	stateGroupTitle: 'Citizens\' Climate Lobby - WI City of Milwaukee Chapter',
 	stateGroupDescription: 'Citizen\'s Climate Lobby empowers everyday people in Wisconsin to work within their communities and members of Congress on solutions to climate change.',
 	stateGroupLink: 'https://community.citizensclimate.org/groups/home/1192',
+	stateGroupTwoTitle: 'Clean Wisconsin',
+	stateGroupTwoDescription: 'Clean Wisconsin works to protect and preserve Wisconsin\'s clean water, clean air and natural heritable.',
+	stateGroupTwoLink: 'https://www.cleanwisconsin.org/energy/',
 	ideology: {
 		liberalGroupTitle: 'The Climate Reality Project - Milwaukee, WI Chapter',
 		liberalGroupDescription: 'The Climate Reality Project is a diverse group of individuals in North Carolina who have come together to solve climate change and build a sustainable future.',
@@ -792,12 +807,28 @@ btnDiscover.addEventListener('click', () => {
 		orgTwoDescription.innerHTML = AZ.ideology.liberalGroupDescription;
 		orgTwoLinkText.innerHTML = AZ.ideology.liberalGroupTitle;
 		orgTwoLink.href = AZ.ideology.liberalGroupLink;
+		
+		orgFiveTitle.innerHTML = AZ.stateGroupTwoTitle;
+		orgFiveDescription.innerHTML = AZ.stateGroupTwoDescription;
+		orgFiveLinkText.innerHTML = AZ.stateGroupTwoTitle;
+		orgFiveLink.href = AZ.stateGroupTwoLink;
 	}
 	else if(result.state === 'AZ' && result.ideology === 'moderate') {
 		orgTwoTitle.innerHTML = AZ.ideology.moderateGroupTitle;
 		orgTwoDescription.innerHTML = AZ.ideology.moderateGroupDescription;
 		orgTwoLinkText.innerHTML = AZ.ideology.moderateGroupTitle;
 		orgTwoLink.href = AZ.ideology.moderateGroupLink;
+		
+		orgFiveTitle.innerHTML = AZ.stateGroupTwoTitle;
+		orgFiveDescription.innerHTML = AZ.stateGroupTwoDescription;
+		orgFiveLinkText.innerHTML = AZ.stateGroupTwoTitle;
+		orgFiveLink.href = AZ.stateGroupTwoLink;
+	}
+	else if(result.state === 'AZ' && result.ideology === 'none') {
+		orgTwoTitle.innerHTML = AZ.stateGroupTwoTitle;
+		orgTwoDescription.innerHTML = AZ.stateGroupTwoDescription;
+		orgTwoLinkText.innerHTML = AZ.stateGroupTwoTitle;
+		orgTwoLink.href = AZ.stateGroupTwoLink;
 	}
 	
 	// Display Org Three - related to school age children & not conservative ideology
@@ -875,12 +906,28 @@ btnDiscover.addEventListener('click', () => {
 		orgTwoDescription.innerHTML = GA.ideology.liberalGroupDescription;
 		orgTwoLinkText.innerHTML = GA.ideology.liberalGroupTitle;
 		orgTwoLink.href = GA.ideology.liberalGroupLink;
+		
+		orgFiveTitle.innerHTML = GA.stateGroupTwoTitle;
+		orgFiveDescription.innerHTML = GA.stateGroupTwoDescription;
+		orgFiveLinkText.innerHTML = GA.stateGroupTwoTitle;
+		orgFiveLink.href = GA.stateGroupTwoLink;
 	}
 	else if(result.state === 'GA' && result.ideology === 'moderate') {
 		orgTwoTitle.innerHTML = GA.ideology.moderateGroupTitle;
 		orgTwoDescription.innerHTML = GA.ideology.moderateGroupDescription;
 		orgTwoLinkText.innerHTML = GA.ideology.moderateGroupTitle;
 		orgTwoLink.href = GA.ideology.moderateGroupLink;
+		
+		orgFiveTitle.innerHTML = GA.stateGroupTwoTitle;
+		orgFiveDescription.innerHTML = GA.stateGroupTwoDescription;
+		orgFiveLinkText.innerHTML = GA.stateGroupTwoTitle;
+		orgFiveLink.href = GA.stateGroupTwoLink;
+	}
+	else if(result.state === 'GA' && result.ideology === 'none') {
+		orgTwoTitle.innerHTML = GA.stateGroupTwoTitle;
+		orgTwoDescription.innerHTML = GA.stateGroupTwoDescription;
+		orgTwoLinkText.innerHTML = GA.stateGroupTwoTitle;
+		orgTwoLink.href = GA.stateGroupTwoLink;
 	}
 	
 	// Display Org Three - related to school age children
@@ -958,12 +1005,28 @@ btnDiscover.addEventListener('click', () => {
 		orgTwoDescription.innerHTML = NC.ideology.liberalGroupDescription;
 		orgTwoLinkText.innerHTML = NC.ideology.liberalGroupTitle;
 		orgTwoLink.href = NC.ideology.liberalGroupLink;
+		
+		orgFiveTitle.innerHTML = NC.stateGroupTwoTitle;
+		orgFiveDescription.innerHTML = NC.stateGroupTwoDescription;
+		orgFiveLinkText.innerHTML = NC.stateGroupTwoTitle;
+		orgFiveLink.href = NC.stateGroupTwoLink;
 	}
 	else if(result.state === 'NC' && result.ideology === 'moderate') {
 		orgTwoTitle.innerHTML = NC.ideology.moderateGroupTitle;
 		orgTwoDescription.innerHTML = NC.ideology.moderateGroupDescription;
 		orgTwoLinkText.innerHTML = NC.ideology.moderateGroupTitle;
 		orgTwoLink.href = NC.ideology.moderateGroupLink;
+		
+		orgFiveTitle.innerHTML = NC.stateGroupTwoTitle;
+		orgFiveDescription.innerHTML = NC.stateGroupTwoDescription;
+		orgFiveLinkText.innerHTML = NC.stateGroupTwoTitle;
+		orgFiveLink.href = NC.stateGroupTwoLink;
+	}
+	else if(result.state === 'NC' && result.ideology === 'none') {
+		orgTwoTitle.innerHTML = NC.stateGroupTwoTitle;
+		orgTwoDescription.innerHTML = NC.stateGroupTwoDescription;
+		orgTwoLinkText.innerHTML = NC.stateGroupTwoTitle;
+		orgTwoLink.href = NC.stateGroupTwoLink;
 	}
 	
 	// Display Org Three - related to school age children
@@ -1036,12 +1099,28 @@ btnDiscover.addEventListener('click', () => {
 		orgTwoDescription.innerHTML = PA.ideology.liberalGroupDescription;
 		orgTwoLinkText.innerHTML = PA.ideology.liberalGroupTitle;
 		orgTwoLink.href = PA.ideology.liberalGroupLink;
+		
+		orgFiveTitle.innerHTML = PA.stateGroupTwoTitle;
+		orgFiveDescription.innerHTML = PA.stateGroupTwoDescription;
+		orgFiveLinkText.innerHTML = PA.stateGroupTwoTitle;
+		orgFiveLink.href = PA.stateGroupTwoLink;
 	}
 	else if(result.state === 'PA' && result.ideology === 'moderate') {
 		orgTwoTitle.innerHTML = PA.ideology.moderateGroupTitle;
 		orgTwoDescription.innerHTML = PA.ideology.moderateGroupDescription;
 		orgTwoLinkText.innerHTML = PA.ideology.moderateGroupTitle;
 		orgTwoLink.href = PA.ideology.moderateGroupLink;
+		
+		orgFiveTitle.innerHTML = PA.stateGroupTwoTitle;
+		orgFiveDescription.innerHTML = PA.stateGroupTwoDescription;
+		orgFiveLinkText.innerHTML = PA.stateGroupTwoTitle;
+		orgFiveLink.href = PA.stateGroupTwoLink;
+	}
+	else if(result.state === 'PA' && result.ideology === 'none') {
+		orgTwoTitle.innerHTML = PA.stateGroupTwoTitle;
+		orgTwoDescription.innerHTML = PA.stateGroupTwoDescription;
+		orgTwoLinkText.innerHTML = PA.stateGroupTwoTitle;
+		orgTwoLink.href = PA.stateGroupTwoLink;
 	}
 	
 	// Display Org Three - related to school age children
@@ -1113,12 +1192,28 @@ btnDiscover.addEventListener('click', () => {
 		orgTwoDescription.innerHTML = WI.ideology.liberalGroupDescription;
 		orgTwoLinkText.innerHTML = WI.ideology.liberalGroupTitle;
 		orgTwoLink.href = WI.ideology.liberalGroupLink;
+		
+		orgFiveTitle.innerHTML = WI.stateGroupTwoTitle;
+		orgFiveDescription.innerHTML = WI.stateGroupTwoDescription;
+		orgFiveLinkText.innerHTML = WI.stateGroupTwoTitle;
+		orgFiveLink.href = WI.stateGroupTwoLink;
 	}
 	else if(result.state === 'WI' && result.ideology === 'moderate') {
 		orgTwoTitle.innerHTML = WI.ideology.moderateGroupTitle;
 		orgTwoDescription.innerHTML = WI.ideology.moderateGroupDescription;
 		orgTwoLinkText.innerHTML = WI.ideology.moderateGroupTitle;
 		orgTwoLink.href = WI.ideology.moderateGroupLink;
+		
+		orgFiveTitle.innerHTML = WI.stateGroupTwoTitle;
+		orgFiveDescription.innerHTML = WI.stateGroupTwoDescription;
+		orgFiveLinkText.innerHTML = WI.stateGroupTwoTitle;
+		orgFiveLink.href = WI.stateGroupTwoLink;
+	}
+	else if(result.state === 'WI' && result.ideology === 'none') {
+		orgTwoTitle.innerHTML = WI.stateGroupTwoTitle;
+		orgTwoDescription.innerHTML = WI.stateGroupTwoDescription;
+		orgTwoLinkText.innerHTML = WI.stateGroupTwoTitle;
+		orgTwoLink.href = WI.stateGroupTwoLink;
 	}
 	
 	// Display Org Three - related to school age children
