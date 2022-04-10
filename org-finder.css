@@ -84,7 +84,8 @@ html.avada-is-100-percent-template #main.width-100 {
 
 /* Quiz integration css */
 .btn-next,
-.btn-discover {
+.btn-discover,
+.btn-red {
 	background-color: #ed463a;
 	padding: 16px 25px;
 	color: #fff;
@@ -102,6 +103,13 @@ html.avada-is-100-percent-template #main.width-100 {
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+}
+
+.btn-next:hover,
+.btn-discover:hover,
+.btn-red:hover,
+.btn-next-five:hover {
+	color: #fff !important; 
 }
 
 .paginated-count {
@@ -480,6 +488,8 @@ html.avada-is-100-percent-template #main.width-100 {
 .take-action-message p {
 	font-size: 24px;
 	color: #000;
+	font-weight: 100;
+	margin-bottom: 40px;
 }
 
 .take-action-link {

@@ -737,7 +737,7 @@ btnDiscover.addEventListener('click', () => {
 	}
 	
 	// Display Org Five - No state option - related to faith
-	if(result.state === 'none' && result.faith === 'yes' && result.ideology !== 'conservative') {			
+	if(result.state === 'none' && result.faith === 'yes' && result.ideology !== 'conservative' && result.ideology !== 'none') {
 		// Pull data from general object
 		orgFiveTitle.innerHTML = general.faith.faithGroupOneTitle;
 		orgFiveDescription.innerHTML = general.faith.faithGroupOneDescription;
@@ -746,7 +746,27 @@ btnDiscover.addEventListener('click', () => {
 	}
 	
 	// Faith only orgs displayed if faith is only choice selected, rest will be filled with default choices
-	if(result.state === 'none' && result.ideology === 'none' && result.ethnicity === 'none' && result.school === 'no' || result.school === '' && result.faith === 'yes') {			
+	if(result.state === 'none' && result.ideology === 'none' && result.ethnicity === 'none' && result.school === 'no' && result.faith === 'yes') {			
+		// Pull data from general object
+		// Org One
+		orgOneTitle.innerHTML = general.faith.faithGroupOneTitle;
+		orgOneDescription.innerHTML = general.faith.faithGroupOneDescription;
+		orgOneLinkText.innerHTML = general.faith.faithGroupOneTitle;
+		orgOneLink.href = general.faith.faithGroupOneLink;
+		
+		// Org Two
+		orgTwoTitle.innerHTML = general.faith.faithGroupTwoTitle;
+		orgTwoDescription.innerHTML = general.faith.faithGroupTwoDescription;
+		orgTwoLinkText.innerHTML = general.faith.faithGroupTwoTitle;
+		orgTwoLink.href = general.faith.faithGroupTwoLink;
+		
+		// Org Three
+		orgThreeTitle.innerHTML = general.faith.faithGroupThreeTitle;
+		orgThreeDescription.innerHTML = general.faith.faithGroupThreeDescription;
+		orgThreeLinkText.innerHTML = general.faith.faithGroupThreeTitle;
+		orgThreeLink.href = general.faith.faithGroupThreeLink;
+	}
+	else if(result.state === 'none' && result.ideology === 'none' && result.ethnicity === 'none' && result.school === '' && result.faith === 'yes') {			
 		// Pull data from general object
 		// Org One
 		orgOneTitle.innerHTML = general.faith.faithGroupOneTitle;
