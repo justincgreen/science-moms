@@ -3,22 +3,23 @@
 </div>
 <script>
 var win = jQuery(window),
-startBreakpoint = jQuery(".sticky-swap").offset().top,
+startBreakpoint = jQuery('.sticky-swap').offset().top,
 swapSectionThree = jQuery('.swap-section-three').offset().top,
-shareBreakpoint = jQuery(".share-section-one").offset().top,
-shareSectionTwo = jQuery(".share-section-two").offset().top,
-speakupBreakpoint = jQuery(".speakup-section-one").offset().top,
-endBreakpoint = jQuery(".speakup-section-three").offset().top;
+shareBreakpoint = jQuery('.share-section-one').offset().top,
+shareSectionTwo = jQuery('.share-section-two').offset().top,
+speakupBreakpoint = jQuery('.speakup-section-one').offset().top,
+endBreakpoint = jQuery('.speakup-section-three').offset().top;
 
 jQuery(window).scroll(function() {
-var winTop = win.scrollTop();
+	var winTop = win.scrollTop();
+	
 	if (winTop >= startBreakpoint && endBreakpoint >= winTop) {
 		var o = winTop - startBreakpoint,
 				a = endBreakpoint - startBreakpoint,
 				n = Math.floor(o / a * 101) + '%';
 
-		jQuery(".indicator-bar").css("width", n);
-	} else startBreakpoint > winTop ? jQuery(".progress-bar").css("width", 0) : winTop > endBreakpoint && jQuery(".progress-bar").css("width", a);
+		jQuery('.indicator-bar').css('width', n);
+	} else startBreakpoint > winTop ? jQuery('.progress-bar').css('width', 0) : winTop > endBreakpoint && jQuery('.progress-bar').css('width', a);
 
 	// Progress bar container behavior
 	if(winTop >= startBreakpoint) {
@@ -52,4 +53,5 @@ var winTop = win.scrollTop();
 		jQuery('#sticky-speakup-title').removeClass('hidden');
 	}
 });
+
 </script>

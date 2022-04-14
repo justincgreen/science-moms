@@ -112,6 +112,10 @@ html.avada-is-100-percent-template #main.width-100 {
 	color: #fff !important; 
 }
 
+.btn-discover.hidden {
+	display: none;
+}
+
 .paginated-count {
 	text-align: left;
 	margin-bottom: 70px;
@@ -174,6 +178,7 @@ html.avada-is-100-percent-template #main.width-100 {
 	border: none;
 	border-radius: 10px;
 	width: 33%;
+	color: #000;
 }
 
 @media(max-width: 767px) {
@@ -214,6 +219,7 @@ html.avada-is-100-percent-template #main.width-100 {
 	position: relative;	
 	padding-left: 20px;
 	cursor: pointer;
+	color: #000;
 }
 
 .yes-label::after,
@@ -241,7 +247,7 @@ html.avada-is-100-percent-template #main.width-100 {
 	display: block;
 	margin-top: 30px;
 	text-decoration: underline;
-	color: #707070;
+	color: #000;
 	font-size: 14px;
 	font-weight: 100;
 	position: relative;
@@ -292,6 +298,34 @@ html.avada-is-100-percent-template #main.width-100 {
 
 .cta-capture-section.hidden {
 	display: none;
+}
+
+.cta-capture-section h2 {
+	padding-left: 10px;
+	margin-bottom: 10px;
+	font-size: 48px !important;
+	font-weight: 500 !important;
+}
+
+@media(max-width: 767px) {
+	.cta-capture-section h2 {
+		font-size: 24px !important;	
+	}
+}
+
+.capture-heading.hidden {
+	display: none;
+}
+
+.cta-capture-section .at-markup.HeaderHtml {
+	padding: 0;	
+}
+
+.cta-capture-section .at-markup.HeaderHtml h1 {
+	font-size: 16px !important;
+	font-weight: 400;
+	padding-left: 10px;
+	margin-bottom: 20px;
 }
 
 .thanks-message {
@@ -528,4 +562,17 @@ html.avada-is-100-percent-template #main.width-100 {
 	.take-action-link {
 		font-size: 16px !important;
 	}
+}
+
+.at label {
+	color: #000 !important;
+}
+
+.at .thankYou p {
+	text-align: left !important;
+	color: #000 !important;
+}
+
+.at .thankYou p + p {
+	display: none !important;
 }

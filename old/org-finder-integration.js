@@ -624,6 +624,7 @@ const btnDiscover = document.querySelector('.btn-discover');
 const orgs = document.querySelector('.organizations');
 const thanksMessage = document.querySelector('.thanks-message');
 const takeActionMessage = document.querySelector('.take-action-message');
+// const captureHeading = document.querySelector('.cta-capture-section .capture-heading');
 
 btnDiscover.addEventListener('click', () => {
 	// Org output variables
@@ -1267,20 +1268,4 @@ btnDiscover.addEventListener('click', () => {
 	}
 	
 });
-
-// Cta capture section
-// setTimeout(() => {
-// 	const captureFormBtn = document.querySelector('.cta-capture-section .at-submit');
-// 	
-// 	captureFormBtn.addEventListener('click', () => {
-// 		quizSection.style.backgroundColor = '#fcd8bb';
-// 		
-// 		setTimeout(()=> {
-// 			if(document.querySelector('.thankYou')) {
-// 				console.log('thankYou element exists, display orgs');
-// 			}
-// 		}, 1000);
-// 	});	
-// }, 3000);
-
 </script>
